@@ -1,0 +1,25 @@
+Babel==0.9.6
+Flask==0.8
+Flask-Assets==0.7
+Flask-Babel==0.8
+-e git+https://github.com/evoloshchuk/flask-debugtoolbar.git@9c5e1171623bdab48ff3dc58b29eb63a52199af4#egg=Flask_DebugToolbar-dev
+Flask-Failsafe==0.1
+Flask-SQLAlchemy==0.16
+Flask-Script==0.3.3
+Jinja2==2.6
+MarkupSafe==0.15
+PyYAML==3.10
+SQLAlchemy==0.7.4
+Werkzeug==0.8.3
+anyjson==0.3.3
+argparse==1.2.1
+configobj==4.7.2
+cssmin==0.1.4
+distribute==0.6.24
+pyhogan==0.2
+pylint==0.25.1
+pystache==0.5.2
+python-dateutil==1.5
+requests==0.12.1
+webassets==0.7
+wsgiref==0.1.2

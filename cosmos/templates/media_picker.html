@@ -1,0 +1,16 @@
+<form name="media-picker" id="media_upload_form" enctype="multipart/form-data" target="hidden_iframe" accept-charset="utf-8" method="post">
+    {{^browser_is_ie}}
+    <a class="button js-fake-upload-button">Choose file</a>
+    {{/browser_is_ie}}
+    <div class="{{^browser_is_ie}} hidden {{/browser_is_ie}}">
+        <input type="file" name="file" class="js-file-selector" size ="14"/>
+        <div class="align-right">
+            <div class="js-media-uploading inline-block mrm align-bottom mbl none"><img src="{{#url_for_static}}img/spinner.gif{{/url_for_static}}" class="loading-img" width="32" height="32" /></div>
+            <input type="submit" name="upload-submit" class="button js-media-upload" value="Upload" />
+        </div>
+    </div>
+    {{^browser_is_ie}}
+    <div class="js-media-uploading inline-block none"><img src="{{#url_for_static}}img/spinner.gif{{/url_for_static}}" class="loading-img" width="32" height="32" /></div>
+    {{/browser_is_ie}}
+</form>
+
